@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "img": "/coldcaffe/ColdBrew.webp",
+    "title": "Cold Brew",
+    "text": "Cold Brew, kalın çekilmiş kahve çekirdeklerinin 12 ila 24 saat boyunca soğuk suda demlenmesiyle hazırlanır. Sıcak demlemeye göre daha yumuşak ve düşük asiditelidir. Genellikle buzla servis edilir.",
+    "url": "/cold-brew",
+    "prefetch": true,
+    "price": 65
+  },
+  {
+    "id": 2,
+    "img": "/coldcaffe/IcedCoffee.png",
+    "title": "Iced Coffee",
+    "text": "Iced Coffee, sıcak olarak demlendikten sonra soğutularak buzla servis edilen kahvedir. Klasik kahve tadını korur ve süt ya da şekerle zenginleştirilebilir.",
+    "url": "/iced-coffee",
+    "prefetch": true,
+    "price": 55
+  },
+  {
+    "id": 3,
+    "img": "/coldcaffe/IcedLatte.png",
+    "title": "Iced Latte",
+    "text": "Iced Latte, bir veya iki shot espressoya soğuk süt eklenerek ve buzla birlikte servis edilerek hazırlanır. Hafif ve kremamsı bir tada sahiptir, isteğe göre vanilya veya karamel gibi aromalarla tatlandırılabilir.",
+    "url": "/iced-latte",
+    "prefetch": true,
+    "price": 75
+  }
+]
