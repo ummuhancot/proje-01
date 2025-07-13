@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Latte",
+    "text": "Buz gibi serinleten lezzetli Latte",
+    "price": 55,
+    "url": "/classic/latte",
+    "img": "/classiccaffe/latte.jpeg",
+    "prefetch": false
+  },
+  {
+    "id": 2,
+    "title": "Cappuccino",
+    "text": "Köpüklü ve buzlu Cappuccino keyfi",
+    "price": 60,
+    "url": "/classic/cappuccino",
+     "img": "/classiccaffe/Cappuccino.jpg",
+    "prefetch": false
+  },
+  {
+    "id": 3,
+    "title": "Flat White",
+    "text": "Yumuşak içimli Flat White",
+    "price": 58,
+    "url": "/classic/flatwhite",
+    "img": "/classiccaffe/FlatWhite.webp",
+    "prefetch": false
+  },
+  {
+    "id": 4,
+    "title": "Macchiato",
+    "text": "Tatlı dokunuşlu Macchiato",
+    "price": 62,
+    "url": "/classic/macchiato",
+    "img": "/classiccaffe/Macchiato.webp",
+    "prefetch": false
+  }
+]

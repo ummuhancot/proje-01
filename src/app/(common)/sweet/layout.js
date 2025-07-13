@@ -1,17 +1,15 @@
-import SweetMenu from '@/components/sweetMenu';
-import React from 'react'
-import { Container } from 'react-bootstrap';
+import React from "react";
+import SweetMenu from "@/components/sweetMenu";
+import { Container } from "react-bootstrap";
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <div>
       <SweetMenu />
-      <Container>
-        {children}
-        
-    </Container>
+      <Container>{children}</Container>
     </div>
   );
-}
+};
 
-export default Layout
+export default Layout;
+

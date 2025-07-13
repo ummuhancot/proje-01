@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Mocha",
+    "text": "Kakao ve espresso birleşimiyle tatlı ve yoğun",
+    "price": 65,
+    "url": "/cold/mocha",
+    "img": "/images/mocha.jpg",
+    "prefetch": false
+  },
+  {
+    "id": 2,
+    "title": "Vanilla Latte",
+    "text": "Vanilya aromalı yumuşak Latte",
+    "price": 60,
+    "url": "/cold/vanillalatte",
+    "img": "/images/vanilla-latte.jpg",
+    "prefetch": false
+  },
+  {
+    "id": 3,
+    "title": "Caramel Macchiato",
+    "text": "Karamel soslu sütlü espresso keyfi",
+    "price": 63,
+    "url": "/cold/caramelmacchiato",
+    "img": "/images/caramel-macchiato.jpg",
+    "prefetch": false
+  },
+  {
+    "id": 4,
+    "title": "Frappe / Frappuccino",
+    "text": "Buzlu, sütlü ve tatlı kahve lezzeti",
+    "price": 68,
+    "url": "/cold/frappe",
+    "img": "/images/frappe.jpg",
+    "prefetch": false
+  }
+]

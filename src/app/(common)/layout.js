@@ -1,17 +1,17 @@
-import Footer from '@/components/footer'
-import Header from '@/components/header'
 import React from 'react'
+import SweetMenu from '@/components/sweetMenu'
 import { Container } from 'react-bootstrap'
+import Header from '@/components/header'
+import Footer from '@/components/footer'
 
 const Layout = ({children}) => {
   return (
     <>
-   
-   <Header/>
-    <Container className="flex-grow-1 d-flex flex-column" style={{ paddingBottom: "80px" }}>
+    <Header />
+    <Container>
         {children}
     </Container>
-    <Footer/>
+    <Footer />
     
     </>
   )
