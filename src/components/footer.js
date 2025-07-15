@@ -1,21 +1,24 @@
 "use client";
 import React from "react";
-import { PiInstagramLogo } from "react-icons/pi";
+import { PiBowlSteam, PiInstagramLogo } from "react-icons/pi";
 import { PiFacebookLogo } from "react-icons/pi";
 import { PiTelegramLogo } from "react-icons/pi";
 import { PiWhatsappLogo } from "react-icons/pi";
+import MainMenuFooter from "./main-menu-footer";
+import { Badge } from "react-bootstrap";
 
 const Footer = () => {
   return (
     <footer
       className="p-5 mt-5"
       style={{
-        
         color: "#ffeb3b",
         padding: "20px ",
         textAlign: "center",
       }}
     >
+      <MainMenuFooter className="d-flex justify-content-center " />
+
       <span
         className="instagram-link"
         style={{
@@ -82,9 +85,9 @@ const Footer = () => {
         onMouseEnter={(e) => (e.currentTarget.style.color = "#25D366")}
         onMouseLeave={(e) => (e.currentTarget.style.color = "#ffeb3b")}
       >
-        <PiWhatsappLogo size={40} />
+        <PiWhatsappLogo size={30} />
       </span>
-      &copy; {new Date().getFullYear()} SARI. All rights reserved.
+      &copy; {new Date().getFullYear()} SARI. bizi takip edebilirsiniz.
     </footer>
   );
 };

@@ -13,10 +13,13 @@ NOTLAR:
 - Sunucu tarafı bileşenlerde etkileşimli özellikler çalışmaz; bu yüzden istemci bileşeni olarak işaretlenir.
 */
 import { PiBowlSteam } from "react-icons/pi";
-import metuItems from "@/helpers/data/main-menu.json";
+
 import Link from 'next/link';
 import React from 'react'
-import { Container, Nav, Navbar, NavDropdown, Badge } from 'react-bootstrap';
+import { Container,  Navbar, Badge } from 'react-bootstrap';
+import MainMenuFooter from "./main-menu-footer";
+import min from "@/../public/minato/mino2.jpg";
+import Image from "next/image";
 
 
 const Header = () => {
@@ -24,11 +27,11 @@ const Header = () => {
     <Navbar expand="lg" collapseOnSelect>
       <Container>
         <Navbar.Brand href="/" as={Link} className="d-flex align-items-center ">
-          <img
-            src="/minato/minato.png"
+          <Image
+            src={min}
             alt="minato"
             width="150"
-            height="150"
+            height="200"
             className="d-inline-block align-top me-5 "
             style={{ borderRadius: "50%" }}
           />
@@ -58,7 +61,9 @@ const Header = () => {
           className="collapse arning-subtle menu"
           id="basic-navbar-nav"
         >
-          <Nav
+
+          <MainMenuFooter/>
+     {/*      <Nav
             className="me-auto" >
             {metuItems.map((item) => (
               <Nav.Link
@@ -80,7 +85,7 @@ const Header = () => {
                 {item.title}
               </Nav.Link>
             ))}
-          </Nav>
+          </Nav> */}
         </Navbar.Collapse>
       </Container>
     </Navbar>

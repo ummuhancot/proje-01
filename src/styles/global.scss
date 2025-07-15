@@ -1,4 +1,5 @@
 @import"bootstrap/scss/bootstrap";
+
 html, body {
   height: 100%;
 }
@@ -34,7 +35,7 @@ body{
 
 
 .sunny {
-  background-image: url("@/../../../public/dogafoto/girlandboyyy.jpeg");
+  background-image: url("@/../../../public/dogafoto/night.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -50,6 +51,19 @@ body{
   background-position: center;
   background-attachment: fixed;
 }
+
+//header ve footer active renk
+footer .nav-link{
+  color:rgb(255, 234, 0) !important;
+}
+
+.nav-link.active{
+  color:rgb(180, 72, 1) !important;
+}
+footer .nav-link.active{
+  color:rgb(0, 255, 255) !important;
+}
+
 
 
 /* body 

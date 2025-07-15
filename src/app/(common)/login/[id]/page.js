@@ -9,7 +9,7 @@ const Page = async ({params}) => {
     .catch(error => console.error(error));
     
   return (
-    <div> 
+    <div>
         <h1>Product Details for ID: {id}</h1>
         {/* Render product details here */}
     </div>
