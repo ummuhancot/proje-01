@@ -8,11 +8,11 @@ import { PiWhatsappLogo } from "react-icons/pi";
 const Footer = () => {
   return (
     <footer
-      className="p-4"
+      className="p-5 mt-5"
       style={{
-        backgroundColor: "#000",
+        
         color: "#ffeb3b",
-        padding: "16px 0",
+        padding: "20px ",
         textAlign: "center",
       }}
     >
@@ -82,7 +82,7 @@ const Footer = () => {
         onMouseEnter={(e) => (e.currentTarget.style.color = "#25D366")}
         onMouseLeave={(e) => (e.currentTarget.style.color = "#ffeb3b")}
       >
-        <PiWhatsappLogo size={32} />
+        <PiWhatsappLogo size={40} />
       </span>
       &copy; {new Date().getFullYear()} SARI. All rights reserved.
     </footer>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>
+    <div className="mt-5 mb-5 d-flex flex-column align-items-center justify-content-center text-center color-white">
       <div
         style={{
           display: "flex",
@@ -18,12 +18,35 @@ const page = () => {
             height: "84px",
             borderRadius: "50%",
             objectFit: "cover",
-            border: "1px solid #FFD600",
+            border: "2px solid #FFD600",
           }}
         />
-        <div>
-          <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>港</div>
-          <div style={{ color: "#666", fontSize: "0.95rem" }}>
+        <div
+          style={{
+            backgroundColor: "#000000a0",
+            color: "white",
+            padding: "10px",
+            borderRadius: "8px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "200px",
+            height: "100px",
+            textAlign: "center",
+            fontWeight: "bold",
+            fontSize: "1.2rem",
+            boxShadow: "0px 0px 3px 5px #FFD600",
+            animation: "rot55 0.7s linear infinite"
+             
+          }}
+        >
+          <div
+            style={{ fontWeight: "bold", fontSize: "1.2rem", color: "white" }}
+          >
+            港
+          </div>
+          <div style={{ color: "#666", fontSize: "0.95rem", color: "white" }}>
             ありがとうありがとう!
           </div>
         </div>

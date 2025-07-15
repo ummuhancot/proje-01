@@ -1,5 +1,4 @@
 import React from 'react'
-import SweetMenu from '@/components/sweetMenu'
 import { Container } from 'react-bootstrap'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
@@ -7,14 +6,17 @@ import Footer from '@/components/footer'
 const Layout = ({children}) => {
   return (
     <>
-    <Header />
-    <Container>
-        {children}
-    </Container>
-    <Footer />
-    
+      <Container className="sunny">
+        <Header />
+      </Container>
+      
+      <Container>{children}</Container>
+
+      <Container className="night">
+        <Footer />
+      </Container>
     </>
-  )
+  );
 }
 
 export default Layout

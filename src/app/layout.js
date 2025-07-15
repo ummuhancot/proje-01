@@ -9,13 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body /* className="d-flex flex-column vh-100" */ >
-        {/* <Header/>
-        <Container className="flex-grow-1"> */}
+      <body  className="minato" >
         {children}
-        {/* </Container> */}
-       {/*  <Footer/> */}
-      </body>
+        </body >
     </html>
   );
 }

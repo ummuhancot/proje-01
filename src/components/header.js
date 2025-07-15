@@ -17,15 +17,15 @@ import metuItems from "@/helpers/data/main-menu.json";
 import Link from 'next/link';
 import React from 'react'
 import { Container, Nav, Navbar, NavDropdown, Badge } from 'react-bootstrap';
-import minato  from "../../public/img/minato.png";
+
 
 const Header = () => {
   return (
-    <Navbar expand="lg" className="bg-warning-subtle" collapseOnSelect>
+    <Navbar expand="lg" collapseOnSelect>
       <Container>
-        <Navbar.Brand href="/" as={Link} className="d-flex align-items-center">
+        <Navbar.Brand href="/" as={Link} className="d-flex align-items-center ">
           <img
-            src="/img/minato.png"
+            src="/minato/minato.png"
             alt="minato"
             width="150"
             height="150"
@@ -42,25 +42,36 @@ const Header = () => {
           </Badge>
           <Badge
             bg="dark"
-            className="d-flex align-items-center "
+            className="d-flex align-items-center  "
             style={{ borderRadius: "8px", padding: "4px" }}
           >
             <PiBowlSteam color="#ffeb3b" size={30} />
           </Badge>
-          <Badge
-            bg="warning"
-            text="dark"
-            className="ms-2 py-2 px-3 d-flex align-items-center"
-            style={{ fontWeight: "bold", fontSize: "1.2rem" }}
-          >
-            黄色
-          </Badge>
+        
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+        <Navbar.Toggle
+          className="bg-warning-subtle "
+          style={{ borderRadius: "8px", padding: "4px", color: "#eca516ff" }}
+          aria-controls="basic-navbar-nav"
+        />
+        <Navbar.Collapse
+          className="collapse arning-subtle menu"
+          id="basic-navbar-nav"
+        >
+          <Nav
+            className="me-auto" >
             {metuItems.map((item) => (
               <Nav.Link
+                style={{
+                  color: "#ffffffff",
+                  textDecoration: "none",
+                  padding: "5px 16px",
+                  fontWeight: "bold",
+                  fontSize: "1rem",
+                  fontFamily: "Rock Salt"
+                  
+                  
+                }}
                 href={item.url}
                 key={item.id}
                 prefettch={item.prefettch}

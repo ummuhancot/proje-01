@@ -13,7 +13,7 @@
     "title": "Vanilla Latte",
     "text": "Vanilya aromalı yumuşak Latte",
     "price": 60,
-    "url": "/cold/vanillalatte",
+    "url": "/cold/mocha",
     "img": "/images/vanilla-latte.jpg",
     "prefetch": false
   },
@@ -22,7 +22,7 @@
     "title": "Caramel Macchiato",
     "text": "Karamel soslu sütlü espresso keyfi",
     "price": 63,
-    "url": "/cold/caramelmacchiato",
+    "url": "/cold/mocha",
     "img": "/images/caramel-macchiato.jpg",
     "prefetch": false
   },

@@ -1,53 +1,38 @@
 "use client";
 import React from "react";
-import { Card, Col, Row } from "react-bootstrap";
+import { Card, Col, Container, Row } from "react-bootstrap";
 import Link from "next/link";
 import ClassicMenuData from "@/helpers/data/classic-menu.json";
 
 const ClassicMenu = () => {
   return (
-    <>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "16px",
-          marginBottom: "32px",
-          marginTop: "32px",
-        }}
-      >
-        <img
-          src="/minato/MinatoWelcome.jpeg"
-          alt="Welcome"
-          style={{
-            width: "84px",
-            height: "84px",
-            borderRadius: "50%",
-            objectFit: "cover",
-            border: "1px solid #FFD600",
-          }}
-        />
-        <div>
-          <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>Minato</div>
-          <div style={{ color: "#666", fontSize: "0.95rem" }}>Hoşgeldin!</div>
-        </div>
-      </div>
+    <div className="mt-5 mb-5 d-flex flex-column align-items-center justify-content-center text-center color-white">
+      
 
-      <Row xs={1} md={3} className="g-4" style={{ paddingBottom: "80px" }}>
+      <Row xs={2} md={3} className="g-4" style={{ paddingBottom: "80px" }}>
         {ClassicMenuData.map((item) => (
           <Col key={item.id}>
             <Card
+              style={{
+                textDecoration: "none",
+                backgroundColor: "#FFD600",
+                color: "#000",
+                boxSizing: "border-box",
+                borderRadius: "8px",
+                padding: "5px",
+                
+                boxShadow: "0 5px 10px rgba(255, 21, 0, 0.72)",
+              }}
               className="h-100 mt-2"
               as={Link}
               href={item.url}
               prefetch={item.prefetch}
-              style={{ textDecoration: "none" }}
             >
               <Card.Img
                 className="object-fit-cover w-100"
                 variant="top"
                 src={item.img}
-                style={{ height: "500px" }}
+                style={{ height: "250px" }}
               />
               <Card.Body
                 className="d-flex flex-column"
@@ -55,7 +40,7 @@ const ClassicMenu = () => {
               >
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text>{item.text}</Card.Text>
-                <div
+                <Container
                   style={{
                     fontWeight: "bold",
                     color: "#FFD600",
@@ -69,13 +54,13 @@ const ClassicMenu = () => {
                   }}
                 >
                   {item.price ? `Fiyat: ${item.price}₺` : ""}
-                </div>
+                </Container>
               </Card.Body>
             </Card>
           </Col>
         ))}
       </Row>
-    </>
+    </div>
   );
 };
 

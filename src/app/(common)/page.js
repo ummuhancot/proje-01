@@ -21,7 +21,7 @@ const Page = () => {
             border: "1px solid #FFD600",
           }}
         />
-        <div>
+        <div className="welcome">
           <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>港</div>
           <div style={{ color: "#666", fontSize: "0.95rem" }}>
             ありがとうありがとう!

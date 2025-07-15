@@ -1,15 +1,14 @@
-"use client";
-import ColdMenu from "@/components/coldMenu";
+
 import React from "react";
 import { Container } from "react-bootstrap";
 
-const Layout = ({ children }) => {
+const layout = ({ children }) => {
   return (
     <div>
-      <ColdMenu />
+      
       <Container>{children}</Container>
     </div>
   );
 };
 
-export default Layout;
+export default layout;

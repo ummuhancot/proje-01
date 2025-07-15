@@ -6,33 +6,7 @@ import MilkMenuData from "@/helpers/data/milk-menu.json";
 
 const SweetMenu = () => {
   return (
-    <>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "16px",
-          marginBottom: "32px",
-          marginTop: "32px",
-        }}
-      >
-        <img
-          src="/minato/sweetMinato.jpeg"
-          alt="Welcome"
-          style={{
-            width: "84px",
-            height: "84px",
-            borderRadius: "50%",
-            objectFit: "cover",
-            border: "1px solid #FFD600",
-          }}
-        />
-        <div>
-          <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>Minato</div>
-          <div style={{ color: "#666", fontSize: "0.95rem" }}>Hoşgeldin!</div>
-        </div>
-      </div>
-
+    <div className="mt-5">
       <Row xs={1} md={3} className="g-4" style={{ paddingBottom: "80px" }}>
         {MilkMenuData.map((item) => (
           <Col key={item.id}>
@@ -41,13 +15,22 @@ const SweetMenu = () => {
               as={Link}
               href={item.url}
               prefetch={item.prefetch}
-              style={{ textDecoration: "none" }}
+              style={{
+                textDecoration: "none",
+                backgroundColor: "#FFD600",
+                color: "#000",
+                boxSizing: "border-box",
+                borderRadius: "8px",
+                padding: "5px",
+
+                boxShadow: "0 5px 10px rgba(255, 21, 0, 0.72)",
+              }}
             >
               <Card.Img
                 className="object-fit-cover w-100"
                 variant="top"
                 src={item.img}
-                style={{ height: "500px" }}
+                style={{ height: "250px" }}
               />
               <Card.Body
                 className="d-flex flex-column"
@@ -75,7 +58,7 @@ const SweetMenu = () => {
           </Col>
         ))}
       </Row>
-    </>
+    </div>
   );
 };
 
