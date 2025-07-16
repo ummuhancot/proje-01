@@ -7,7 +7,12 @@ import MilkMenuData from "@/helpers/data/milk-menu.json";
 const MilkMenu = () => {
   return (
     <div className="mt-5">
-      <Row xs={1} md={3} className="g-4" style={{ paddingBottom: "80px" }}>
+      <Row
+        xs={1}
+        md={3}
+        className="g-4"
+        style={{ paddingBottom: "80px", fontFamily: "Permanent Marker" }}
+      >
         {MilkMenuData.map((item) => (
           <Col key={item.id}>
             <Card

@@ -19,7 +19,7 @@ const ColdMenu = () => {
                 borderRadius: "8px",
                 padding: "5px",
                 
-                boxShadow: "0 5px 10px rgba(255, 21, 0, 0.72)",
+                boxShadow: "0 10px 20px rgba(255, 21, 0, 0.72)",
               }}
               className="h-100 mt-2"
               as={Link}

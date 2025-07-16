@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import { PiBowlSteam, PiInstagramLogo } from "react-icons/pi";
+import {  PiInstagramLogo } from "react-icons/pi";
 import { PiFacebookLogo } from "react-icons/pi";
 import { PiTelegramLogo } from "react-icons/pi";
 import { PiWhatsappLogo } from "react-icons/pi";
 import MainMenuFooter from "./main-menu-footer";
-import { Badge } from "react-bootstrap";
+
 
 const Footer = () => {
   return (
@@ -18,7 +18,6 @@ const Footer = () => {
       }}
     >
       <MainMenuFooter className="d-flex justify-content-center " />
-
       <span
         className="instagram-link"
         style={{
@@ -27,6 +26,8 @@ const Footer = () => {
           transition: "color 0.2s",
           color: "#ffeb3b",
           cursor: "pointer",
+          borderRadius: "8px",
+          boxShadow: "0 10px 20px rgba(221, 0, 255, 0.72)",
         }}
         onClick={() =>
           window.open("https://instagram.com/", "_blank", "noopener,noreferrer")
@@ -44,6 +45,8 @@ const Footer = () => {
           transition: "color 0.2s",
           color: "#ffeb3b",
           cursor: "pointer",
+          borderRadius: "8px",
+          boxShadow: "0 15px 20px rgba(4, 0, 255, 0.72)",
         }}
         onClick={() =>
           window.open("https://facebook.com/", "_blank", "noopener,noreferrer")
@@ -61,6 +64,8 @@ const Footer = () => {
           transition: "color 0.2s",
           color: "#ffeb3b",
           cursor: "pointer",
+          borderRadius: "8px",
+          boxShadow: "0 15px 20px rgba(0, 200, 255, 0.72)",
         }}
         onClick={() =>
           window.open("https://t.me/", "_blank", "noopener,noreferrer")
@@ -78,6 +83,8 @@ const Footer = () => {
           transition: "color 0.2s",
           color: "#ffeb3b",
           cursor: "pointer",
+          borderRadius: "8px",
+          boxShadow: "0 10px 20px rgba(0, 255, 47, 0.72)",
         }}
         onClick={() =>
           window.open("https://wa.me/", "_blank", "noopener,noreferrer")

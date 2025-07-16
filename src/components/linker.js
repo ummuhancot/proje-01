@@ -10,7 +10,7 @@ export const Linker = (props) => {
     const pathname = usePathname();
 
   return (
-    <NavLink {...props} className={pathname === props.href ? "active" : ""} >
+    <NavLink {...props} className={pathname === props.href ? "active" : ""} as={NavLink}>
       {props.children}
     </NavLink>
   );

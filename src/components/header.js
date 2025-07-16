@@ -18,15 +18,17 @@ import Link from 'next/link';
 import React from 'react'
 import { Container,  Navbar, Badge } from 'react-bootstrap';
 import MainMenuFooter from "./main-menu-footer";
-import min from "@/../public/minato/mino2.jpg";
+import min from "@/../public/minato/minologo.jpg";
 import Image from "next/image";
 
 
 const Header = () => {
   return (
-    <Navbar expand="lg" collapseOnSelect>
+    <Navbar expand="lg" collapseOnSelect data-bs-theme="dark">
       <Container>
         <Navbar.Brand href="/" as={Link} className="d-flex align-items-center ">
+        
+        
           <Image
             src={min}
             alt="minato"
