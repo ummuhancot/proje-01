@@ -9,7 +9,7 @@ const ClassicMenu = () => {
     <div className="mt-5 mb-5 d-flex flex-column align-items-center justify-content-center text-center color-white">
       
 
-      <Row xs={2} md={3} className="g-4" style={{ paddingBottom: "80px" ,fontFamily: "Permanent Marker", }}>
+      <Row xs={2} md={3} className="g-4" style={{ paddingBottom: "80px" }}>
         {ClassicMenuData.map((item) => (
           <Col key={item.id}>
             <Card

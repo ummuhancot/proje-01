@@ -40,7 +40,7 @@ const Header = () => {
           <Badge
             bg="warning"
             text="dark"
-            className="me-2 py-2 px-3 d-flex align-items-center"
+            className="me-2 py-2 px-3 d-flex align-items-center sarı"
             style={{ fontWeight: "bold", fontSize: "1.2rem" }}
           >
             SARI

@@ -1,4 +1,9 @@
+$font-family-sans-serif: var(--font-nunito), var(--font-lexend), system-ui,
+  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
 @import"bootstrap/scss/bootstrap";
+
 
 html, body {
   height: 100%;
@@ -10,6 +15,10 @@ body{
   
 }
 
+.sarı{
+   font-family: "Permanent Marker", cursive;
+   font-weight: 900;
+}
 
 .minato {
   background-image: url("@/../../../public/minato/MMinato.png"); 
