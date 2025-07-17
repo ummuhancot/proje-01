@@ -6,10 +6,5 @@
   { "id": 5, "image": "mino.jpeg" ,"title":"istediğiniz mangaları okuya bilirsiniz" },
   { "id": 6, "image": "mino1.jpg", "title": "resim yapabilir" },
   { "id": 7, "image": "mino2.jpg", "title": "isterseniz canlı müziklete müzikal gurubumuza eşlik edebilirniz" },
-  { "id": 8, "image": "mino3.jpeg", "title": "bilemedim" },
-  { "id": 9, "image": "minologo.jpg", "title": "bilemedim" },
-  { "id": 10, "image": "MMinato.png", "title": "bilemedim" },
-  { "id": 11, "image": "MMMinato.jpeg", "title": "bilemedim" },
-  { "id": 12, "image": "sweetMinato.jpeg", "title": "bilemedim" },
-  { "id": 13, "image": "Welcome.png", "title": "bilemedim" }
+  { "id": 8, "image": "mino3.jpeg", "title": "bilemedim" }
 ]

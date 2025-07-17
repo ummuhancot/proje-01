@@ -1,8 +1,10 @@
+import Dashboard from '@/components/dashboard'
 import React from 'react'
 
 const Page = () => {
   return (
-    <div style={{color:"white"}}>Page dashboard</div>
+    <Dashboard/>
+    /* <div style={{color:"white"}}>Page dashboard</div> */
   )
 }
 

@@ -1,9 +1,17 @@
 import { wait } from '@/helpers/functions';
 import React from 'react'
 
+export const metadata = {
+
+  title:"classic",
+  description: "coffe of yellow",
+
+}
+
+
 const page = async () => {
 //burda function kısmının wait ini carıp calıştırdım
-  await wait(5000)
+  await wait(1000)
 
   return (
     <div className="mt-5 mb-5 d-flex flex-column align-items-center justify-content-center text-center color-white">

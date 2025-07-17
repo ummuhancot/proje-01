@@ -1,6 +1,16 @@
 import { notFound } from 'next/navigation';
 import React from 'react'
 
+
+//dinamik olarak sayfanın ismini yazdırır.
+export const generateMetadata=()=>{
+  //fetch data
+  return{
+     title:"??????",
+     description:"??????"
+  }
+}
+
 const Page =  async ({params}) => {
 
 

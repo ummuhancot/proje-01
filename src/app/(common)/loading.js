@@ -4,7 +4,7 @@ import { Spinner } from 'react-bootstrap'
 
 const Loading = () => {
   return (
-    <div className={`text-center p-5 ``${lexend.variable} ${nunito.variable}`}>
+    <div>
       <Spinner animation="border" variant="light" />
     </div>
   );

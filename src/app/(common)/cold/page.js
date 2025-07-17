@@ -1,5 +1,11 @@
 import React from 'react';
 
+
+export const metadata = {
+  title: "cold",
+  description: "coffe of yellow",
+};
+
 const Page = () => {
   return (
     <div className='mb-5'>

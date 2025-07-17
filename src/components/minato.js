@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import minoo from "@/../public/minato/mino1.jpg";
+import minoo from "@/../public/minato/mi.jpg";
 
 const Minato = () => {
   return (
