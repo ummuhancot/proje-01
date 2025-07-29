@@ -1,0 +1,22 @@
+[
+  { "img": "/cat/cat1.jpeg", "price": 1000 },
+  { "img": "/cat/cat2.jpeg", "price": 1050 },
+  { "img": "/cat/cat3.jpeg", "price": 1100 },
+  { "img": "/cat/cat4.jpeg", "price": 1150 },
+  { "img": "/cat/cat5.jpeg", "price": 1200 },
+  { "img": "/cat/cat6.jpeg", "price": 1250 },
+  { "img": "/cat/cat7.jpeg", "price": 1300 },
+  { "img": "/cat/cat8.jpeg", "price": 1350 },
+  { "img": "/cat/cat9.jpeg", "price": 1400 },
+  { "img": "/cat/cat10.jpeg", "price": 1450 },
+  { "img": "/cat/cat11.jpeg", "price": 1500 },
+  { "img": "/cat/cat12.jpeg", "price": 1550 },
+  { "img": "/cat/cat13.jpeg", "price": 1600 },
+  { "img": "/cat/cat14.jpeg", "price": 1650 },
+  { "img": "/cat/cat15.jpeg", "price": 1700 },
+  { "img": "/cat/cat16.jpeg", "price": 1750 },
+  { "img": "/cat/cat17.jpeg", "price": 1800 },
+  { "img": "/cat/cat18.jpeg", "price": 1850 },
+  { "img": "/cat/cat19.jpeg", "price": 1900 },
+  { "img": "/cat/cat20.jpeg", "price": 1950 }
+]
