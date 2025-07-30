@@ -3,7 +3,9 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <Dashboard/>
+    <div>
+   
+    </div>
     /* <div style={{color:"white"}}>Page dashboard</div> */
   )
 }

@@ -2,29 +2,34 @@ import { notFound } from 'next/navigation';
 import React from 'react'
 
 
+const API_URL = `https://68847e9b745306380a386b6a.mockapi.io/sari/coffe/user`;
 //dinamik olarak sayfanın ismini yazdırır.
-export const generateMetadata=()=>{
+export const generateMetadata= async ({params})=>{
   //fetch data
+   const { id } = await params;
+   const res = await fetch(
+    `${API_URL}/${id}`
+   );
+  const data = await res.json();
+  
   return{
-     title:"??????",
-     description:"??????"
+    title:"??????",
+    description:"??????"
   }
 }
 
 const Page =  async ({params}) => {
-
-
+  
+  
   const {id} = await params;
+  const res = await fetch(`${API_URL}/${id}`);
+  const data = await res.json();
+  if(!res.ok) throw new Error(data.message)
 
- //ürün bulunamadı demek isterken not found göndere bilirim
-  if(id === null || id === undefined) notFound();
-    
-    //ürün id'si 1 ise
-    if(id === 1) notFound();
 
 
   return (
-    <div>Page Product Page {id}</div>
+    <div>Page Product Page </div>
   )
 }
 
