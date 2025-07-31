@@ -47,12 +47,12 @@ body{
 
   // Mobil ekranlar (768px ve altı)
   @media (max-width: 768px) {
-    background-image: url("@/../../../public/minato/minnnn.png");
+    background-image: url("@/../../../public/minato/icon1.png");
   }
 
   // Bilgisayar ekranları (769px ve üzeri)
   @media (min-width: 769px) {
-    background-image: url("@/../../../public/minato/konaha.jpg");
+    background-image: url("@/../../../public/minato/icon1.png");
   }
 }
 
@@ -93,6 +93,63 @@ footer .nav-link.active{
 .productsHeader{
   font-family: var(--font-moolahlah);
 }
+
+.menu {
+  
+  padding: 30px;
+  font-size: 20px;
+  box-shadow: 1px 1px 6px 1px wheat;
+
+    &:hover{
+        color: rgb(251, 164, 3);
+        transition: all .35s;
+    }
+
+    &:active{
+        box-shadow: none;
+        transition: .15s all;
+        color:red;
+    }
+
+ 
+}
+
+
+.table-style {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px; /* Satırlar arası boşluk */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: transparent;
+}
+
+.table-style th,
+.table-style td {
+  padding: 12px 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.table-style tbody tr:hover td {
+  color: rgb(251, 164, 3);
+  box-shadow: 0 4px 15px rgba(251, 164, 3, 0.4);
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+.table-style tbody tr:active td {
+  color: red;
+  box-shadow: none;
+  transform: translateY(0);
+  transition: all 0.15s ease;
+}
+
+
 
 
 /* body 

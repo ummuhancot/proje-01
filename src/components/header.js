@@ -27,8 +27,6 @@ const Header = () => {
     <Navbar expand="lg" collapseOnSelect data-bs-theme="dark">
       <Container>
         <Navbar.Brand href="/" as={Link} className="d-flex align-items-center ">
-        
-        
           <Image
             src={min}
             alt="minato"
@@ -40,8 +38,8 @@ const Header = () => {
           <Badge
             bg="warning"
             text="dark"
-            className="me-2 py-2 px-3 d-flex align-items-center sarı"
-            style={{ fontWeight: "bold", fontSize: "1.2rem" }}
+            className="me-2 py-1 px-2 d-flex align-items-center sarı productsHeader"
+            style={{ fontWeight: "bold", fontSize: "2rem" }}
           >
             SARI
           </Badge>
@@ -52,20 +50,18 @@ const Header = () => {
           >
             <PiBowlSteam color="#ffeb3b" size={30} />
           </Badge>
-        
         </Navbar.Brand>
-        <Navbar.Toggle
+        <Navbar.Toggle 
           className="bg-warning-subtle "
           style={{ borderRadius: "8px", padding: "4px", color: "#eca516ff" }}
           aria-controls="basic-navbar-nav"
         />
         <Navbar.Collapse
-          className="collapse arning-subtle menu"
+          className="collapse arning-subtle"
           id="basic-navbar-nav"
         >
-
-          <MainMenuFooter/>
-     {/*      <Nav
+          <MainMenuFooter />
+          {/*      <Nav
             className="me-auto" >
             {metuItems.map((item) => (
               <Nav.Link

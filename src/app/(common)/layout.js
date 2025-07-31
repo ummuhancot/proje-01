@@ -2,7 +2,6 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
-import Image from 'next/image'
 
 
 const Layout = ({children}) => {

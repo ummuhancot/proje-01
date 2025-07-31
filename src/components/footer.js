@@ -9,7 +9,7 @@ import MainMenuFooter from "./main-menu-footer";
 
 const Footer = () => {
   return (
-    <footer
+    <footer 
       className="p-5 mt-5"
       style={{
         color: "#ffeb3b",

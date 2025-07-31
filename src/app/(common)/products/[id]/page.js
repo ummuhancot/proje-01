@@ -39,7 +39,7 @@ const Page = async ({ params }) => {
 
   return (
   <>
-    <ProductsHeader title ={"Product Details"}/>
+    <ProductsHeader title ={data.title}/>
     <ProductDetails user ={data} />
   </>
   );

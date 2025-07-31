@@ -18,7 +18,7 @@ const Page = async () => {
 
   return (
     <div className="container py-5">
-      <ProductsHeader title="Welcome Cat" />
+      <ProductsHeader/>
       <ProductsList user={mergedData} />
     </div>
   );

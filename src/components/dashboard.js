@@ -1,33 +1,48 @@
-"use client"
-import React from 'react'
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+"use client";
+import Link from "next/link";
+import React from "react";
+import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
+import menuItems from "@/helpers/data/dashboard-menu.json";
 
-const Dashboard = () => {
+const DashboardMenu = ({ children }) => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
+    <Navbar expand="lg" className="bg-warning mb-3">
+      <Container fluid>
+        <Navbar.Brand 
+        className="productsHeader"
+        style={{fontSize:"50px"}}
+        href="/dashboard"
+        as={Link}>
+          SARI
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="dashboard-menu" />
+        <Navbar.Offcanvas
+          id="dashboard-menu"
+          aria-labelledby="dashboard-menu-label"
+          placement="end"
+        >
+          <Offcanvas.Header closeButton className="swiper">
+            <Offcanvas.Title id="dashboard-menu-label">MENU</Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+            <Nav className="justify-content-end flex-grow-1 pe-3 swiper">
+              {menuItems.map((item) => (
+                <Nav.Link className="menu"
+                  key={item.id}
+                  href={item.url}
+                  as={Link}
+                  prefetch={item.prefetch}
+                >
+                  {item.title}
+                </Nav.Link>
+              ))}
+            </Nav>
+            {children}
+          </Offcanvas.Body>
+        </Navbar.Offcanvas>
       </Container>
     </Navbar>
   );
-}
+};
 
-export default Dashboard
+export default DashboardMenu;
